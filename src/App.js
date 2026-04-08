@@ -13,7 +13,7 @@ import Settings from './components/Settings';
 
 function App() {
   return (
-    <Router >
+    <Router basename="/admindashboard">
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/analytics" element={<Analytics />} />
