@@ -1,0 +1,38 @@
+/* Custom styles for the dashboard */
+
+/* Sidebar fixed width and height */
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Main content offset for sidebar */
+.main-content {
+  margin-left: 250px;
+  padding-top: 20px;
+}
+
+/* Chart containers */
+.chart-container {
+  height: 300px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    position: relative;
+  }
+  .main-content {
+    margin-left: 0;
+  }
+}
+
+/* Additional utilities */
+.text-purple {
+  color: #6f42c1 !important;
+}

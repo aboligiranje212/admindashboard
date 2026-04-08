@@ -1,0 +1,32 @@
+/* 🌞 Light Theme */
+.theme-light {
+  --bg-color: #f9f9f9;
+  --text-color: #222;
+  --card-bg: #ffffff;
+}
+
+/* 🌙 Dark Theme */
+.theme-dark {
+  --bg-color: #646363ff;
+  --text-color: #f5f5f5;
+  --card-bg: #5b5a5aff;
+}
+
+/* 💙 Blue Theme */
+.theme-blue {
+  --bg-color: #eaf3ff;
+  --text-color: #003366;
+  --card-bg: #cfe2ff;
+}
+
+/* Apply theme variables globally */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.4s ease-in-out;
+}
+
+.card {
+  background-color: var(--card-bg) !important;
+  transition: background-color 0.3s ease;
+}
